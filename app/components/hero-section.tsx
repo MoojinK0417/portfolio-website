@@ -5,10 +5,14 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { Spotlight } from "./ui/spotlight";
+import { ShootingStars } from "./ui/shooting-starts";
+import { StarsBackground } from "./ui/stars-background";
 
 const HeroSection = () => {
   return (
     <section className="lg:py-16">
+      <ShootingStars className="z-0" />
+      <StarsBackground className="z-0" />
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="white"
@@ -39,9 +43,11 @@ const HeroSection = () => {
           <div>
             <Link
               href="/#contact"
-              className="px-6   inline-block py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-primary-500 to-secondary-500 hover:bg-slate-200 hover:text-black text-white"
+              className="px-6 z-40 inline-block py-3 w-full sm:w-fit rounded-full mr-2 bg-gradient-to-br from-primary-500 to-secondary-500 text-white"
             >
-              Hire Me
+              <button className="shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-white dark:border-white dark:text-white text-white rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
+                Hire Me
+              </button>
             </Link>
             <button className="shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-white dark:border-white dark:text-white text-white rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
               Download CV

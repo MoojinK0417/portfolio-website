@@ -5,6 +5,8 @@ import Image from "next/image";
 import TabButton from "../components/ui/tab-button";
 import { motion } from "framer-motion";
 import { Spotlight } from "./ui/spotlight";
+import { ShootingStars } from "./ui/shooting-starts";
+import { StarsBackground } from "./ui/stars-background";
 
 interface TabData {
   title: string;
@@ -18,12 +20,11 @@ const TAB_DATA: TabData[] = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express</li>
-        <li>PostgreSQL</li>
-        <li>Sequelize</li>
+        <li>Java</li>
+        <li>Python</li>
         <li>JavaScript</li>
         <li>React</li>
+        <li>Node.js</li>
       </ul>
     ),
   },
@@ -32,8 +33,7 @@ const TAB_DATA: TabData[] = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>Computer Programmer Analyst, Canadore College, ON</li>
       </ul>
     ),
   },
@@ -42,8 +42,7 @@ const TAB_DATA: TabData[] = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+        <li>Preparing - AWS Certified Developer</li>
       </ul>
     ),
   },
@@ -61,7 +60,9 @@ const AboutSection: React.FC = () => {
 
   return (
     <>
-      <div id="about" className="pt-36">
+      <ShootingStars className="top-full z-0" />
+      <StarsBackground className="top-full z-0" />
+      <div id="about" className="pt-36 z-10">
         <p className="text-slate-600 sm:text-2xl lg:text-2xl lg:leading-normal text-center">
           Get To Know More
         </p>
@@ -88,7 +89,7 @@ const AboutSection: React.FC = () => {
               a team player and I am excited to work with others to create
               amazing applications.
             </p>
-            <div className="flex flex-row justify-start mt-8">
+            <div className="flex flex-row justify-start mt-8 z-10">
               <TabButton
                 selectTab={() => handleTabChange("skills")}
                 active={tab === "skills"}

@@ -42,7 +42,7 @@ const TAB_DATA: TabData[] = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>Preparing - AWS Certified Developer</li>
+        <li>Preparing</li>
       </ul>
     ),
   },
@@ -81,13 +81,13 @@ const AboutSection: React.FC = () => {
           />
           <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
             <p className="text-base lg:text-lg">
-              I am a full stack web developer with a passion for creating
-              interactive and responsive web applications. I have experience
-              working with JavaScript, React, Redux, Node.js, Express,
-              PostgreSQL, Sequelize, HTML, CSS, and Git. I am a quick learner
-              and I am always looking to expand my knowledge and skill set. I am
-              a team player and I am excited to work with others to create
-              amazing applications.
+              I am a full-stack web developer with a strong background in both
+              front-end and back-end technologies, specializing in creating
+              scalable, responsive, and interactive web applications. My
+              technical skill set includes Java, Python, Django, FastAPI,
+              JavaScript, TypeScript, React, Next.js, PostgreSQL, MySQL,
+              MongoDB, and Git. I have extensive experience in cloud computing,
+              working with AWS, and implementing CI/CD pipelines.
             </p>
             <div className="flex flex-row justify-start mt-8 z-10">
               <TabButton

@@ -49,9 +49,13 @@ const HeroSection = () => {
                 Hire Me
               </button>
             </Link>
-            <button className="shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-white dark:border-white dark:text-white text-white rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
+            <a
+              href="/resume/moojinkim-resume.pdf"
+              download
+              className="inline-block shadow-[0_0_0_3px_#000000_inset] px-6 py-2 mt-4 bg-transparent border border-white dark:border-white dark:text-white text-white rounded-lg font-bold transform hover:-translate-y-1 transition duration-400"
+            >
               Download CV
-            </button>
+            </a>
           </div>
         </motion.div>
         <motion.div

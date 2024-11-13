@@ -24,7 +24,7 @@ const achievementsList = [
   },
   {
     metric: "Certifications",
-    value: "0",
+    value: "1",
   },
 ];
 

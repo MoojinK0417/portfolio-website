@@ -42,7 +42,9 @@ const TAB_DATA: TabData[] = [
     id: "certifications",
     content: (
       <ul className="list-disc pl-2">
-        <li>Preparing</li>
+        <li>
+          AWS Certified AI Practitioner Early Adopter ( Oct 2024 - Oct 2027 )
+        </li>
       </ul>
     ),
   },
